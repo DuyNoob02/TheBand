@@ -8,6 +8,7 @@
 
 /* Set font cho toan bo van ban trong website */
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,6 +27,71 @@ html {
 .text-white {
     color: #fff !important;
 }
+.text-center{
+    text-align: center !important; 
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border: none;
+    padding: 11px 16px;
+    display: inline-block;/*vì ban đầu phần mô tả mang thuộc tính inline, nên khi btn mang thuộc tính block nó sẽ đè lên decs, vì vậy phải thay đổi block mặc định của btn thành inline-block*/
+    margin-top: 15px;/*nếu k chỉnh về inline-block sẽ không margin đc*/
+    border: none;
+    border-radius: 3px;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+
+    padding: 15px 8px 8px;
+}
+.col-third{
+    width: 33.3333%;
+}
+.col-four{
+    width: 25%;
+}
+.col-full{
+    width: 100%;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
 
 #main {}
 
@@ -37,6 +103,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;/* thuộc tính này dùng để ẩn những thằng con dư ra*/
 }
 
 
@@ -95,18 +162,26 @@ html {
 #nav .nav-icon {
     font-size: 14px;
 }
-
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
-    cursor: pointer;
 }
 
 
 #header .search-btn:hover {
-    background-color: #f44336;
+    cursor: pointer;
+    background-color: #ccc;
 }
 
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .menu-icon,
 #header .nav-search-icon {
     color: #fff;
     line-height: 46px;
@@ -151,11 +226,15 @@ html {
 
 #content {}
 
+
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    max-width: 100%;
+    padding: 64px 0 112px;/*trên 64px, trái phải 0, dưới 112px*/
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 
@@ -189,8 +268,6 @@ html {
 }
 
 #content .member-item {
-    float: left;
-    width: 25%;
     text-align: center;
 
 }
@@ -200,8 +277,8 @@ html {
 }
 
 #content .member-img {
-    width: 154px;
-    margin-top: 15px;
+    width: 241px;
+    margin-top: 5px;
     border-radius: 4px;
 }
 
@@ -225,7 +302,7 @@ html {
 }
 
 .ticket-list .sold-out {
-    background-color: #f44336;
+    background-color: #ccc;
     color: #fff;
     padding: 3px 4px;
     margin-left: 16px;
@@ -247,18 +324,15 @@ html {
 
 /* Places */
 .places-list {
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
+    margin-top: 32px;
 }
 
-.place-item {
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
-}
+
 
 .place-img {
+    /* width: 234px; */
     width: 100%;
+    height: 200px;
     display: block;
     /*vì mặc định sẽ là inline, nên sẽ có khoảng cách giữa ảnh và phần content bên dưới, bên set lại thành block*/
     /*vì ảnh đang to hơn thẻ chứa nó nên phải set về 100%*/
@@ -289,20 +363,7 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    border: none;
-    padding: 11px 16px;
-    display: inline-block;/*vì ban đầu phần mô tả mang thuộc tính inline, nên khi btn mang thuộc tính block nó sẽ đè lên decs, vì vậy phải thay đổi block mặc định của btn thành inline-block*/
-    margin-top: 15px;/*nếu k chỉnh về inline-block sẽ không margin đc*/
-}
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
-#footer {}
+
 
 /* thiết lập lớp phủ với thuộc tính position:fixed */
 .modal{
@@ -417,3 +478,68 @@ html {
         transform: translateY(0);
     }
 }
+
+/* Contact form */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* css selector nang cao de chon nhung class con cung mot luc */
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.poster-section img{
+    width: 100%;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; */
+}
+
+/* Footer section */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);    
+}
+
+
+

@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./assets/img/icon.png" type="image/x-icon" />
+    <title>BLACKPINK</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <script src="./assets/JS/click_buy.js"></script> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
+        <!-- Begin header section -->
         <div id="header">
             <!-- Begin nav -->
             <!-- Tạo nhanh thẻ ul có id nav cùng 5 thẻ li chứa thẻ a
             Sử dụng cú pháp nhanh như sau: ul#nav>li*5>a -->
             <ul id="nav">
-                <li><a href="">HOME</a></li>
-                <li><a href="">BAND</a></li>
-                <li><a href="">TOUR</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#tour">TOUR</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
@@ -28,9 +30,9 @@
                     <!-- Tạo nhanh thẻ ul có class subnav cùng 5 thẻ li chứa thẻ a
                     Sử dụng cú pháp nhanh như sau: ul.subnav>li*3>a -->
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -40,49 +42,61 @@
             <div class="search-btn">
                 <i class="nav-search-icon fa-solid fa-magnifying-glass"></i>
             </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon fa-solid fa-bars"></i>
+            </div>
             <!-- End: Search Button -->
         </div>
+        <!-- End header section -->
 
+        <!-- Begin slider section -->
         <div id="slider">
             <div class="text-content">
                 <h2 class="text-heading">BLACK PINK</h2>
                 <div class="text-description">We are in your area!</div>
             </div>
         </div>
+        <!-- End slider section -->
 
+        <!-- Begin conten section -->
         <div id="content">
-            <div class="content-section">
-                <h2 class="section-heading">THE BAND</h2>
+            <div id="team" class="content-section">
+                <h2 class="section-heading" style="color: pink;">
+                    BLɅϽKPIИK
+                </h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
-                    Blackpink (tiếng Hàn: 블랙핑크; Romaja: Beullaekpingkeu; thường được viết cách điệu là BLɅϽKPIИK)[1] là một nhóm nhạc nữ Hàn Quốc do công ty YG Entertainment thành lập và quản lý. Nhóm gồm 4 thành viên bao gồm Jisoo, Jennie, Rosé, Lisa. Blackpink chính thức ra mắt với album đĩa đơn đầu tay mang tên Square One gồm hai ca khúc "Boombayah" và "Whistle". Cả hai sau đó đã lọt vào bảng xếp hạng World Digital Songs của Billboard và bảng xếp hạng nhạc số Gaon của Hàn Quốc.[2][3]
+                    Blackpink (tiếng Hàn: 블랙핑크; Romaja: Beullaekpingkeu; thường được viết cách điệu là BLɅϽKPIИK) là một nhóm nhạc nữ Hàn Quốc do công ty YG Entertainment thành lập và quản lý. Nhóm gồm 4 thành viên bao gồm Jisoo, Jennie, Rosé, Lisa. Blackpink chính thức ra mắt với album đĩa đơn đầu tay mang tên Square One gồm hai ca khúc "Boombayah" và "Whistle". Cả hai sau đó đã lọt vào bảng xếp hạng World Digital Songs của Billboard và bảng xếp hạng nhạc số Gaon của Hàn Quốc.
+                </p>
+                <p class="about-text">
+                    Tháng 9.2022, BlackPink vừa có màn tái xuất với album phòng thu thứ 2 - Born pink và ca khúc chủ đề Shut down. Sản phẩm âm nhạc lần này tiếp tục mang về cho nhóm nhạc nữ 4 thành viên nhiều thành tích ấn tượng trong đó có vị trí số 1 trên bảng xếp hạng album Billboard 200 trong tuần đầu tiên ra mắt và hơn 200 triệu lượt xem MV trên YouTube. Đồng thời, vé tham dự chuyến lưu diễn vòng quanh thế giới của nhóm cũng được bán hết trong thời gian ngắn.
                 </p>
 
-                <div class="member-list">
-                    <div class="member-item">
-                        <p class="member-name">Lisa</p>
-                        <img src="/assets/img/member/bandmember.jpg"  alt="Lisa" class="member-img">
+                <div class="row member-list">
+                    <div class="col col-half text-center">
+                        <p class="member-name">Jisoo</p>
+                        <img src="/assets/img/member/Jisoo.jpeg"  alt="Jisoo" class="member-img">
                     </div>
 
-                    <div class="member-item">
-                        <p class="member-name">Lisa</p>
-                        <img src="/assets/img/member/bandmember.jpg"  alt="Lisa" class="member-img">
+                    <div class="col col-half text-center">
+                        <p class="member-name">Jennie</p>
+                        <img src="/assets/img/member/Jennie.jpeg"  alt="Jennie" class="member-img">
                     </div>
 
-                    <div class="member-item">
-                        <p class="member-name">Lisa</p>
-                        <img src="/assets/img/member/bandmember.jpg"  alt="Lisa" class="member-img">
+                    <div class="col col-half text-center">
+                        <p class="member-name">Rosé</p>
+                        <img src="/assets/img/member/Rosé.jpeg"  alt="Rosé" class="member-img">
                     </div>
 
-                    <div class="member-item">
+                    <div class="col col-half text-center">
                         <p class="member-name">Lisa</p>
-                        <img src="/assets/img/member/bandmember.jpg"  alt="Lisa" class="member-img">
+                        <img src="/assets/img/member/Lisa.jpeg"  alt="Lisa" class="member-img">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
 
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section ">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -94,54 +108,95 @@
                     </ul> 
 
                     <!-- Places -->
-                    <div class="places-list">
-                        <div class="place-item">
-                            <img src="/assets/img/places/place1.jpg" alt="New York" class="place-img">
+                    <div class="row places-list">
+                        <div class="col col-third">
+                            <img src="/assets/img/places/barcelona.jpg" alt="New York" class="place-img">
                             <div class="place-content">
-                                <h3 class="place-heading">New York</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <h3 class="place-heading">Barcelona</h3>
+                                <p class="place-time">Mon 05 Dec 2022</p>
+                                <p class="place-desc">We hope everything goes smoothly</p>
+                                <button href="#" class="btn js-buy-ticket">Buy Tickets</button>
 
                             </div>
                         </div>
 
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="/assets/img/places/place2.jpg" alt="Paris" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <p class="place-time">Sun 11 Dec 2022</p>
+                                <p class="place-desc">We love this place and fan's friendly</p>
+                                <button href="#" class="btn js-buy-ticket">Buy Tickets</button>
 
                             </div>
                         </div>
 
-                        <div class="place-item">
-                            <img src="/assets/img/places/place3.jpg" alt="San Francisco" class="place-img">
+                        <div class="col col-third">
+                            <img src="/assets/img/places/berlin.jpg" alt="San Francisco" class="place-img">
                             <div class="place-content">
-                                <h3 class="place-heading">San Francisco</h3>
-                                <p class="place-time">Sun 29 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <h3 class="place-heading">Berlin</h3>
+                                <p class="place-time">Mon 19 Nov 2022</p>
+                                <p class="place-desc">Waiting our performance in music tour this time.</p>
+                                <button href="#" class="btn js-buy-ticket">Buy Tickets</button>
 
                             </div>
                         </div>
-                        <!-- sử dụng clear để class place list bao hết phần tử bên trong -->
+                        <!-- sử dụng clear để class place list bao hết phần tử bên trong hoặc sử dụng lớp giả :;after --> 
                         <div class="clear"></div>
                     </div>
                 </div>
             </div>
-
-            <div class="content-section">
+            <!-- Begin: contact section -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fa-solid fa-location-dot"></i>Chicago - US</p>
+                        <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+
+                            <input class="btn pull-right mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
                 
+            </div>
+            <!-- End; contact section -->
+
+            <!-- Map section -->
+            <div class="poster-section">
+                <img src="./assets/img/Poster/HD-wallpaper-blackpink-love-2021.jpg" alt="map">
             </div>
         </div>
 
         <div id="footer">
-
+            <div class="socials-list">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a> </p>
         </div>
     </div>
 
@@ -207,6 +262,20 @@ trong khi ở class modal đã set thuộc tính display: none -->
         modalContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;//thay vì đặt giá trị chiều cao cố định, thì biến này sẽ lấy giá trị khi người dùng thay đổi chiều cao header
+        mobileMenu.onclick = function(){
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 </html>
