@@ -499,6 +499,15 @@ html {
     line-height: 1.4;
 }
 
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
 /* css selector nang cao de chon nhung class con cung mot luc */
 .contact-info i[class*="fa-"] {
     width: 30px;
