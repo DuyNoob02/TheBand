@@ -201,12 +201,11 @@ html {
 #slider{
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
+    /* padding-top: 50%; */
     /* những thuộc tính phía sau background được hiểu là
     phía trước dấu / là thuộc tính background-position
     phía sau nó: cover là background size, no-repeat là background repeat*/
-    background: url('/assets/img/slider/black-pink-1-1.jpg') top center / cover no-repeat;
-
+    /* background: url('/assets/img/slider/black-pink-1-1.jpg') top center / cover no-repeat; */
 }
 
 
