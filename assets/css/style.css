@@ -211,7 +211,7 @@ html {
 
 #slider .text-content {
     position: absolute;
-    bottom: 47px;
+    bottom: 45px;
     color: #fff;
     /* left và transform là 2 thuộc tính dùng chung để căn giữa */
     /* thuộc tính transform;translateX(-50%)
