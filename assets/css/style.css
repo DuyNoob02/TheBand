@@ -44,6 +44,7 @@ html {
     display: inline-block;/*vì ban đầu phần mô tả mang thuộc tính inline, nên khi btn mang thuộc tính block nó sẽ đè lên decs, vì vậy phải thay đổi block mặc định của btn thành inline-block*/
     margin-top: 15px;/*nếu k chỉnh về inline-block sẽ không margin đc*/
     border-radius: 3px;
+    appearance: none;/*giu nguyen thuoc tinh cua phan tu trong trinh duyet khac*/
 }
 .btn:hover{
     color: #000;
@@ -201,11 +202,11 @@ html {
 #slider{
     position: relative;
     margin-top: 46px;
-    /* padding-top: 50%; */
+    padding-top: 50%;
     /* những thuộc tính phía sau background được hiểu là
     phía trước dấu / là thuộc tính background-position
     phía sau nó: cover là background size, no-repeat là background repeat*/
-    /* background: url('/assets/img/slider/black-pink-1-1.jpg') top center / cover no-repeat; */
+    background: url('../img/slider/black-pink-1-1.jpg') top center / cover no-repeat;
 }
 
 
@@ -232,6 +233,7 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {}
