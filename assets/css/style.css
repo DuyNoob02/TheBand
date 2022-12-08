@@ -198,7 +198,7 @@ html {
     font-size: 14px;
 }
 
-#slider {
+#slider{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
@@ -208,6 +208,7 @@ html {
     background: url('/assets/img/slider/black-pink-1-1.jpg') top center / cover no-repeat;
 
 }
+
 
 #slider .text-content {
     position: absolute;
